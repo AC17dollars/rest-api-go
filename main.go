@@ -9,6 +9,7 @@ import (
 var router = gin.Default()
 
 func main() {
+	// gin.SetMode(gin.ReleaseMode)
 	//ping check
 	router.GET("/ping", func(c *gin.Context) {
 		c.JSON(http.StatusOK, gin.H{
